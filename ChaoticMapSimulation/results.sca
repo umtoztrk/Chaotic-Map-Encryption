@@ -1,0 +1,27 @@
+version 3
+run General-0-20241217-02:03:23-35544
+attr configname General
+attr datetime 20241217-02:03:23
+attr datetimef 20241217-020323
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network ChaoticNetwork
+attr processid 35544
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network ChaoticNetwork
+config sim-time-limit 50s
+config output-vector-file results.vec
+config output-scalar-file results.sca
+
+par ChaoticNetwork.sender typename "\"SenderNode\""
+par ChaoticNetwork.receiver typename "\"ReceiverNode\""
+par ChaoticNetwork typename "\"ChaoticNetwork\""
+
